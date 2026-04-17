@@ -42,7 +42,7 @@ const indexDocument = async () => {
   // Vector embedding model
   const embeddings = new GoogleGenerativeAIEmbeddings({
     apiKey: process.env.GEMINI_API_KEY,
-    model: "gemini-embedding-001",
+    model: "gemini-embedding-001", // 3072 dimensional vector
   });
 
   console.log("Embedding model configured");
